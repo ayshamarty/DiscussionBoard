@@ -11,7 +11,12 @@ let itemSchema = new Schema ({
     },
     content: {
         type: String,
-        minlength: [2, "please write at least two characters"]
+        required: true,
+        minlength: 2
+    },
+    email: {
+        type: String,
+        required: true
     }
 })
 
